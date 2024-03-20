@@ -1,0 +1,64 @@
+/* This is a universal selector. It selects and styles all elements. */
+* {
+  /* The box-sizing property is used to tell the browser what the sizing properties (width and height) should include. */
+  box-sizing: border-box;
+  /* The margin property sets the margin area on all four sides of an element. Here it is set to 0. */
+  margin: 0;
+  /* The padding property sets the padding area on all four sides of an element. Here it is set to 0. */
+  padding: 0;
+  /* The font-family property specifies the font for an element. Here 'PT Sans' is used, if it's not available, the browser will use any sans-serif font installed on the computer. */
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* These classes are for different pages of the website. */
+.home,
+.services,
+.products,
+.sign-up {
+  /* The display property specifies the display behavior of an element. Here flex is used which makes the element a block-level flex container. */
+  display: flex;
+  /* The height property sets the height of an element. Here it is set to 90vh which means 90% of the viewport's height. */
+  height: 90vh;
+  /* The align-items property sets the align-self value for all direct children as a group. Here it is set to center. */
+  align-items: center;
+  /* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally). */
+  justify-content: center;
+  /* The font-size property sets the size of the font. */
+  font-size: 3rem;
+}
+
+/* The .services class is for the services page. */
+.services {
+  /* The background-image property sets one or more background images for an element. */
+  background-image: url('/images/img-2.jpg');
+  /* The background-position property sets the starting position of a background image. */
+  background-position: center;
+  /* The background-size property specifies the size of the background images. */
+  background-size: cover;
+  /* The background-repeat property sets if/how a background image will be repeated. */
+  background-repeat: no-repeat;
+  /* The color property sets the color of the text. */
+  color: #fff;
+  /* The font-size property sets the size of the font. */
+  font-size: 100px;
+}
+
+/* The .products class is for the products page. */
+.products {
+  background-image: url('/images/img-1.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+/* The .sign-up class is for the sign-up page. */
+.sign-up {
+  background-image: url('/images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}

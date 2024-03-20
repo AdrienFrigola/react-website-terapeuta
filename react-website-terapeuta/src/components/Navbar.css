@@ -1,0 +1,204 @@
+/* The .navbar class is for the navigation bar. */
+.navbar {
+  /* The background property sets the background effects of an element. Here it is set to a linear gradient. */
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  /* The height property sets the height of an element. */
+  height: 80px;
+  /* The display property specifies the display behavior of an element. Here flex is used which makes the element a block-level flex container. */
+  display: flex;
+  /* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally). */
+  justify-content: center;
+  /* The align-items property sets the align-self value for all direct children as a group. Here it is set to center. */
+  align-items: center;
+  /* The font-size property sets the size of the font. */
+  font-size: 1.2rem;
+  /* The position property specifies the type of positioning method used for an element. Here sticky is used which means the element is positioned based on the user's scroll position. */
+  position: sticky;
+  /* The top property affects the vertical position of a positioned element. Here it is set to 0. */
+  top: 0;
+  /* The z-index property sets the stack order of a positioned element. An element with greater stack order is always in front of an element with a lower stack order. Here it is set to 999. */
+  z-index: 999;
+}
+
+/* The .navbar-container class is for the container of the navigation bar. */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  /* The max-width property sets the maximum width of an element. */
+  max-width: 1500px;
+}
+
+/* The .navbar-logo class is for the logo of the navigation bar. */
+.navbar-logo {
+  color: #fff;
+  /* The justify-self property sets the way an item is justified inside its alignment container along the inline or column axis. Here it is set to start. */
+  justify-self: start;
+  margin-left: 20px;
+  /* The cursor property sets the type of mouse cursor to be displayed when pointing over an element. Here it is set to pointer which indicates a link. */
+  cursor: pointer;
+  /* The text-decoration property sets the appearance of decorative lines on text. Here it is set to none. */
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+/* The .fa-typo3 class is for the Typo3 icon in the navigation bar. */
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+/* The .nav-menu class is for the navigation menu. */
+.nav-menu {
+  /* The display property specifies the display behavior of an element. Here grid is used which makes the element a block-level grid container. */
+  display: grid;
+  /* The grid-template-columns property specifies the number (and the widths) of columns in a grid layout. Here it is set to repeat(4, auto) which means create 4 columns of auto width. */
+  grid-template-columns: repeat(4, auto);
+  /* The grid-gap property is a shorthand property for grid-row-gap and grid-column-gap. Here it is set to 10px. */
+  grid-gap: 10px;
+  /* The list-style property is a shorthand property for setting the list-style-type, list-style-image, and list-style-position properties. Here it is set to none. */
+  list-style: none;
+  text-align: center;
+  /* The width property sets the width of an element. Here it is set to 60vw which means 60% of the viewport's width. */
+  width: 60vw;
+  /* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally). Here it is set to end. */
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+/* The .nav-item class is for the items of the navigation menu. */
+.nav-item {
+  height: 80px;
+}
+
+/* The .nav-links class is for the links of the navigation menu. */
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+/* The :hover pseudo-class selects elements when you mouse over them. */
+.nav-links:hover {
+  /* The border-bottom property is a shorthand property for border-bottom-width, border-bottom-style, and border-bottom-color. Here it is set to 4px solid #fff. */
+  border-bottom: 4px solid #fff;
+  /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to all 0.2s ease-out. */
+  transition: all 0.2s ease-out;
+}
+
+/* The .fa-bars class is for the bars icon in the navigation bar. */
+.fa-bars {
+  color: #fff;
+}
+
+/* The .nav-links-mobile class is for the mobile version of the navigation links. */
+.nav-links-mobile {
+  display: none;
+}
+
+/* The .menu-icon class is for the menu icon. */
+.menu-icon {
+  display: none;
+}
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices. */
+@media screen and (max-width: 960px) {
+  /* The .NavbarItems class is for the items of the navigation bar. */
+  .NavbarItems {
+    position: relative;
+  }
+
+  /* The .nav-menu class is for the navigation menu. */
+  .nav-menu {
+    display: flex;
+    /* The flex-direction property specifies the direction of the flexible items. Here it is set to column. */
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    /* The position property specifies the type of positioning method used for an element. Here absolute is used which means the element is positioned relative to its first positioned (not static) ancestor element. */
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  /* The .nav-menu.active class is for the active state of the navigation menu. */
+  .nav-menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  /* The .nav-links class is for the links of the navigation menu. */
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  /* The :hover pseudo-class selects elements when you mouse over them. */
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  /* The .navbar-logo class is for the logo of the navigation bar. */
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* The transform property applies a 2D or 3D transformation to an element. Here it is used to move the logo. */
+    transform: translate(25%, 50%);
+  }
+
+  /* The .menu-icon class is for the menu icon. */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  /* The .fa-times class is for the times icon in the navigation bar. */
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  /* The .nav-links-mobile class is for the mobile version of the navigation links. */
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  /* The :hover pseudo-class selects elements when you mouse over them. */
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+}

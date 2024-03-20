@@ -1,0 +1,67 @@
+/* The :root selector matches the root element of a tree representing the document. In HTML, :root represents the <html> element and is identical to the selector html, except that its specificity is higher. */
+:root {
+  /* The --primary is a CSS variable that is set to #fff which is white. */
+  --primary: #fff;
+}
+
+/* The .btn class is for the button. */
+.btn {
+  /* The padding property is a shorthand property for padding-top, padding-right, padding-bottom, and padding-left. Here it is set to 8px 20px. */
+  padding: 8px 20px;
+  /* The border-radius property sets the rounding of the corners of an element. Here it is set to 2px. */
+  border-radius: 2px;
+  /* The outline property sets the outline of an element. Here it is set to none. */
+  outline: none;
+  /* The border property is a shorthand property for border-width, border-style, and border-color. Here it is set to none. */
+  border: none;
+  /* The cursor property sets the type of mouse cursor to be displayed when pointing over an element. Here it is set to pointer which indicates a link. */
+  cursor: pointer;
+}
+
+/* The .btn--primary class is for the primary button. */
+.btn--primary {
+  /* The background-color property sets the background color of an element. Here it is set to var(--primary) which is the value of the --primary variable. */
+  background-color: var(--primary);
+  /* The color property sets the color of the text. Here it is set to #242424 which is a dark gray. */
+  color: #242424;
+  /* The border property is a shorthand property for border-width, border-style, and border-color. Here it is set to 1px solid var(--primary) which means a 1px wide solid border with the color of the --primary variable. */
+  border: 1px solid var(--primary);
+}
+
+/* The .btn--outline class is for the outline button. */
+.btn--outline {
+  /* The background-color property sets the background color of an element. Here it is set to transparent which means the background is transparent. */
+  background-color: transparent;
+  /* The color property sets the color of the text. Here it is set to #fff which is white. */
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to all 0.3s ease-out. */
+  transition: all 0.3s ease-out;
+}
+
+/* The .btn--medium class is for the medium button. */
+.btn--medium {
+  padding: 8px 20px;
+  /* The font-size property sets the size of the font. Here it is set to 18px. */
+  font-size: 18px;
+}
+
+/* The .btn--large class is for the large button. */
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+/* The :hover pseudo-class selects elements when you mouse over them. */
+.btn--large:hover,
+.btn--medium:hover {
+  /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to all 0.3s ease-out. */
+  transition: all 0.3s ease-out;
+  /* The background property sets the background effects of an element. Here it is set to #fff which is white. */
+  background: #fff;
+  /* The color property sets the color of the text. Here it is set to #242424 which is a dark gray. */
+  color: #242424;
+  /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to 250ms. */
+  transition: 250ms;
+}

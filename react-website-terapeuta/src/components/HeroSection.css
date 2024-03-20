@@ -1,0 +1,97 @@
+/* The video class is for the video element. */
+video {
+  /* The object-fit property specifies how the contents of a replaced element should be fitted to the box established by its used height and width. Here it is set to cover. */
+  object-fit: cover;
+  /* The width property sets the width of an element. Here it is set to 100% which means the full width of its parent. */
+  width: 100%;
+  /* The height property sets the height of an element. Here it is set to 100% which means the full height of its parent. */
+  height: 100%;
+  /* The position property specifies the type of positioning method used for an element. Here fixed is used which means the element is positioned relative to the browser window. */
+  position: fixed;
+  /* The z-index property sets the stack order of a positioned element. An element with greater stack order is always in front of an element with a lower stack order. Here it is set to -1. */
+  z-index: -1;
+}
+
+/* The .hero-container class is for the hero section container. */
+.hero-container {
+  /* The height property sets the height of an element. Here it is set to 100vh which means 100% of the viewport's height. */
+  height: 100vh;
+  /* The width property sets the width of an element. Here it is set to 100% which means the full width of its parent. */
+  width: 100%;
+  /* The display property specifies the display behavior of an element. Here flex is used which makes the element a block-level flex container. */
+  display: flex;
+  /* The flex-direction property specifies the direction of the flexible items. Here it is set to column. */
+  flex-direction: column;
+  /* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally). Here it is set to center. */
+  justify-content: center;
+  /* The align-items property sets the align-self value for all direct children as a group. Here it is set to center. */
+  align-items: center;
+  /* The box-shadow property attaches one or more shadows to an element. Here it is set to inset 0 0 0 1000px rgba(0, 0, 0, 0.2). */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  /* The object-fit property specifies how the contents of a replaced element should be fitted to the box established by its used height and width. Here it is set to contain. */
+  object-fit: contain;
+}
+
+/* The .hero-container > h1 selector selects all h1 elements where the parent is a .hero-container element. */
+.hero-container > h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+/* The .hero-container > p selector selects all p elements where the parent is a .hero-container element. */
+.hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/* The .hero-btns class is for the buttons in the hero section. */
+.hero-btns {
+  margin-top: 32px;
+}
+
+/* The .hero-btns .btn selector selects all .btn elements inside .hero-btns elements. */
+.hero-btns .btn {
+  margin: 6px;
+}
+
+/* The .fa-play-circle class is for the play circle icon. */
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices. */
+@media screen and (max-width: 960px) {
+  /* The .hero-container > h1 selector selects all h1 elements where the parent is a .hero-container element. */
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* The .hero-container > h1 selector selects all h1 elements where the parent is a .hero-container element. */
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+  /* The .hero-container > p selector selects all p elements where the parent is a .hero-container element. */
+  .hero-container > p {
+    font-size: 30px;
+  }
+
+  /* The .btn-mobile class is for the mobile version of the button. */
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  /* The .btn class is for the button. */
+  .btn {
+    width: 100%;
+  }
+}

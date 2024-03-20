@@ -1,0 +1,208 @@
+/* The .footer-container class is for the footer container. */
+.footer-container {
+  /* The background-color property sets the background color of an element. */
+  background-color: #242424;
+  /* The padding property is a shorthand property for padding-top, padding-right, padding-bottom, and padding-left. Here it is set to 4rem 0 2rem 0. */
+  padding: 4rem 0 2rem 0;
+  /* The display property specifies the display behavior of an element. Here flex is used which makes the element a block-level flex container. */
+  display: flex;
+  /* The flex-direction property specifies the direction of the flexible items. Here it is set to column. */
+  flex-direction: column;
+  /* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally). Here it is set to center. */
+  justify-content: center;
+  /* The align-items property sets the align-self value for all direct children as a group. Here it is set to center. */
+  align-items: center;
+}
+
+/* The .footer-subscription class is for the subscription form in the footer. */
+.footer-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* The text-align property sets the horizontal alignment of the text. Here it is set to center. */
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  color: #fff;
+}
+
+/* The .footer-subscription > p selector selects all p elements where the parent is a .footer-subscription element. */
+.footer-subscription > p {
+  /* The font-family property specifies the font for an element. */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/* The .footer-subscription-heading class is for the heading of the subscription form. */
+.footer-subscription-heading {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+/* The .footer-subscription-text class is for the text of the subscription form. */
+.footer-subscription-text {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+/* The .footer-input class is for the input field of the subscription form. */
+.footer-input {
+  padding: 8px 20px;
+  /* The border-radius property sets the rounding of the corners of an element. Here it is set to 2px. */
+  border-radius: 2px;
+  margin-right: 10px;
+  /* The outline property sets the outline of an element. Here it is set to none. */
+  outline: none;
+  /* The border property is a shorthand property for border-width, border-style, and border-color. Here it is set to none. */
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  /* The border property is a shorthand property for border-width, border-style, and border-color. Here it is set to 1px solid #fff. */
+  border: 1px solid #fff;
+}
+
+/* The .footer-links class is for the links in the footer. */
+.footer-links {
+  width: 100%;
+  /* The max-width property sets the maximum width of an element. */
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+/* The .footer-link-wrapper class is for the wrapper of the links. */
+.footer-link-wrapper {
+  display: flex;
+}
+
+/* The .footer-link-items class is for the items of the links. */
+.footer-link-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  /* The box-sizing property is used to tell the browser what the sizing properties (width and height) should include. Here it is set to border-box. */
+  box-sizing: border-box;
+}
+
+/* The .footer-link-items h2 selector selects all h2 elements inside .footer-link-items elements. */
+.footer-link-items h2 {
+  margin-bottom: 16px;
+}
+
+/* The .footer-link-items > h2 selector selects all h2 elements where the parent is a .footer-link-items element. */
+.footer-link-items > h2 {
+  color: #fff;
+}
+
+/* The .footer-link-items a selector selects all a elements inside .footer-link-items elements. */
+.footer-link-items a {
+  color: #fff;
+  /* The text-decoration property sets the appearance of decorative lines on text. Here it is set to none. */
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+/* The :hover pseudo-class selects elements when you mouse over them. */
+.footer-link-items a:hover {
+  color: #e9e9e9;
+  /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to 0.3s ease-out. */
+  transition: 0.3s ease-out;
+}
+
+/* The .footer-email-form h2 selector selects all h2 elements inside .footer-email-form elements. */
+.footer-email-form h2 {
+  margin-bottom: 2rem;
+}
+
+/* The .footer-input::placeholder selector selects the placeholder text of the input field. */
+.footer-input::placeholder {
+  color: #b1b1b1;
+}
+
+/* The .social-icon-link class is for the social media icons. */
+.social-icon-link {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* The .social-media class is for the social media section. */
+.social-media {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* The .social-media-wrap class is for the wrapper of the social media section. */
+.social-media-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+/* The .social-icons class is for the social media icons. */
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+/* The .social-logo class is for the logo in the social media section. */
+.social-logo {
+  color: #fff;
+  /* The justify-self property sets the way an item is justified inside its alignment container along the inline or column axis. Here it is set to start. */
+  justify-self: start;
+  margin-left: 20px;
+  /* The cursor property sets the type of mouse cursor to be displayed when pointing over an element. Here it is set to pointer which indicates a link. */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* The .website-rights class is for the copyright text. */
+.website-rights {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices. */
+@media screen and (max-width: 820px) {
+  /* The .footer-links class is for the links in the footer. */
+  .footer-links {
+    padding-top: 2rem;
+  }
+
+  /* The .footer-input class is for the input field of the subscription form. */
+  .footer-input {
+    width: 100%;
+  }
+
+  /* The .btn class is for the button. */
+  .btn {
+    width: 100%;
+  }
+
+  /* The .footer-link-wrapper class is for the wrapper of the links. */
+  .footer-link-wrapper {
+    /* The flex-direction property specifies the direction of the flexible items. Here it is set to column. */
+    flex-direction: column;
+  }
+
+  /* The .social-media-wrap class is for the wrapper of the social media section. */
+  .social-media-wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Empty media query */
+}

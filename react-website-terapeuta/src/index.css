@@ -1,0 +1,85 @@
+/* The :root pseudo-class selects the root element of a document. In HTML, the root element is always the html element. */
+:root {
+  /* These are global font styles. */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* This is a new CSS feature that allows the website to adapt to both light and dark themes. */
+  color-scheme: light dark;
+  /* The color property sets the color of the text. */
+  color: rgba(255, 255, 255, 0.87);
+  /* The background-color property sets the background color of an element. */
+  background-color: #242424;
+
+  /* These are font rendering properties. */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* The a element represents a hyperlink. */
+a {
+  font-weight: 500;
+  color: #646cff;
+  /* The text-decoration property sets the appearance of decorative lines on text. */
+  text-decoration: inherit;
+}
+/* The :hover pseudo-class selects elements when you mouse over them. */
+a:hover {
+  color: #535bf2;
+}
+
+/* The body of the document. */
+body {
+  margin: 0;
+  display: flex;
+  /* The place-items property is a shorthand property for align-items and justify-items. */
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* The h1 element represents a first level heading. */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* The button element represents a clickable button. */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. */
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+/* The :focus pseudo-class selects the element that currently has focus. */
+button:focus,
+/* The :focus-visible pseudo-class selects the element that has focus and is also visible. */
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices. */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

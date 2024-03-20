@@ -1,0 +1,166 @@
+/* The .cards class is for the cards container. */
+.cards {
+  /* The padding property is a shorthand property for padding-top, padding-right, padding-bottom, and padding-left. Here it is set to 4rem. */
+  padding: 4rem;
+  /* The background property sets the background effects of an element. Here it is set to #fff which is white. */
+  background: #fff;
+}
+
+/* The h1 selector selects all h1 elements. */
+h1 {
+  /* The text-align property sets the horizontal alignment of the text. Here it is set to center. */
+  text-align: center;
+}
+
+/* The .cards__container class is for the cards container. */
+.cards__container {
+  /* The display property specifies the display behavior of an element. Here flex is used which makes the element a block-level flex container. */
+  display: flex;
+  /* The flex-flow property is a shorthand property for flex-direction and flex-wrap. Here it is set to column. */
+  flex-flow: column;
+  /* The align-items property sets the align-self value for all direct children as a group. Here it is set to center. */
+  align-items: center;
+  /* The max-width property sets the maximum width of an element. Here it is set to 1120px. */
+  max-width: 1120px;
+  /* The width property sets the width of an element. Here it is set to 90% which means 90% of the width of its parent. */
+  width: 90%;
+  /* The margin property is a shorthand property for margin-top, margin-right, margin-bottom, and margin-left. Here it is set to 0 auto which means top and bottom margins are 0, and the left and right margins are automatically set to align the element in the center. */
+  margin: 0 auto;
+}
+
+/* The .cards__wrapper class is for the wrapper of the cards. */
+.cards__wrapper {
+  /* The position property specifies the type of positioning method used for an element. Here relative is used which means the element is positioned relative to its normal position. */
+  position: relative;
+  /* The margin property is a shorthand property for margin-top, margin-right, margin-bottom, and margin-left. Here it is set to 50px 0 45px. */
+  margin: 50px 0 45px;
+}
+
+/* The .cards__items class is for the items of the cards. */
+.cards__items {
+  margin-bottom: 24px;
+}
+
+/* The .cards__item class is for the item of the cards. */
+.cards__item {
+  display: flex;
+  /* The flex property is a shorthand property for flex-grow, flex-shrink, and flex-basis. Here it is set to 1. */
+  flex: 1;
+  /* The margin property is a shorthand property for margin-top, margin-right, margin-bottom, and margin-left. Here it is set to 0 1rem. */
+  margin: 0 1rem;
+  /* The border-radius property sets the rounding of the corners of an element. Here it is set to 10px. */
+  border-radius: 10px;
+}
+
+/* The .cards__item__link class is for the link of the card item. */
+.cards__item__link {
+  display: flex;
+  /* The flex-flow property is a shorthand property for flex-direction and flex-wrap. Here it is set to column. */
+  flex-flow: column;
+  /* The width property sets the width of an element. Here it is set to 100% which means the full width of its parent. */
+  width: 100%;
+  /* The box-shadow property attaches one or more shadows to an element. Here it is set to 0 6px 20px rgba(56, 125, 255, 0.17). */
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  /* The -webkit-filter property is used to apply graphical effects like blur or color shifting to an element. Here it is set to drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017)). */
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  /* The filter property is used to apply graphical effects like blur or color shifting to an element. Here it is set to drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017)). */
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  /* The overflow property specifies what should happen if content overflows an element's box. Here it is set to hidden which means the overflow is clipped, and the rest of the content will be invisible. */
+  overflow: hidden;
+  /* The text-decoration property sets the appearance of decorative lines on text. Here it is set to none. */
+  text-decoration: none;
+}
+
+/* The .cards__item__pic-wrap class is for the picture wrapper of the card item. */
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  /* The padding-top property sets the top padding (space) of an element. Here it is set to 67%. */
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+/* The .fade-img class is for the image that fades in. */
+.fade-img {
+  /* The animation-name property specifies a name for the @keyframes animation. Here it is set to fade-img. */
+  animation-name: fade-img;
+  /* The animation-duration property specifies how many seconds or milliseconds an animation takes to complete one cycle. Here it is set to 2s. */
+  animation-duration: 2s;
+}
+
+/* The .cards__item__pic-wrap::after selector selects the ::after pseudo-element of the .cards__item__pic-wrap element. */
+.cards__item__pic-wrap::after {
+  /* The content property is used with the ::before and ::after pseudo-elements, to insert generated content. Here it is set to attr(data-category) which means the value of the data-category attribute of the selected element. */
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  /* The max-width property sets the maximum width of an element. Here it is set to calc((100%) - 60px) which means 100% of the width of its parent minus 60px. */
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #1f98f4;
+  /* The box-sizing property is used to tell the browser what the sizing properties (width and height) should include. Here it is set to border-box. */
+  box-sizing: border-box;
+}
+
+/* The .cards__item__img class is for the image of the card item. */
+.cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  /* The object-fit property specifies how the contents of a replaced element should be fitted to the box established by its used height and width. Here it is set to cover. */
+  object-fit: cover;
+  /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to all 0.2s linear. */
+  transition: all 0.2s linear;
+}
+
+/* The :hover pseudo-class selects elements when you mouse over them. */
+.cards__item__img:hover {
+  /* The transform property applies a 2D or 3D transformation to an element. Here it is set to scale(1.1) which means increase the size of the element to 110%. */
+  transform: scale(1.1);
+}
+
+/* The .cards__item__info class is for the information of the card item. */
+.cards__item__info {
+  padding: 20px 30px 30px;
+}
+
+/* The .cards__item__text class is for the text of the card item. */
+.cards__item__text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices. */
+@media only screen and (min-width: 1200px) {
+  /* The .content__blog__container class is for the blog content container. */
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* The .cards__items class is for the items of the cards. */
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* The .cards__item class is for the item of the cards. */
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
