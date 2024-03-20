@@ -6,6 +6,11 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 // Importing the CSS for the Navbar
 import './Navbar.css';
+import { Icon } from '@iconify/react';
+import menuIcon from '@iconify-icons/fa-solid/bars';
+import closeIcon from '@iconify-icons/fa-solid/times';
+import mortarPestleSolid from '@iconify-icons/fa-solid/mortar-pestle';
+
 
 // Defining the Navbar function
 function Navbar() {
@@ -39,14 +44,20 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          Taibuda
-            <i class='fab fa-typo3' />
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
+      <div className="navbar-container">
+                {/* Mortar Pestle Icon */}
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                    
+                Taibuda<Icon icon={mortarPestleSolid} className="navbar-icon"/>
+                    
+                </Link>
+                {/* Logo */}
+                
+                {/* Menu Icon */}
+                <div className="menu-icon" onClick={handleClick}>
+                    {/* Render the appropriate icon based on the menu state */}
+                    <Icon icon={click ? closeIcon : menuIcon} />
+                </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
