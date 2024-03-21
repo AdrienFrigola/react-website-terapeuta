@@ -10,6 +10,8 @@ import { Icon } from '@iconify/react';
 import menuIcon from '@iconify-icons/fa-solid/bars';
 import closeIcon from '@iconify-icons/fa-solid/times';
 import mortarPestleSolid from '@iconify-icons/fa-solid/mortar-pestle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faVihara } from '@fortawesome/free-solid-svg-icons';
 
 
 // Defining the Navbar function
@@ -45,12 +47,13 @@ function Navbar() {
     <>
       <nav className='navbar'>
       <div className="navbar-container">
-                {/* Mortar Pestle Icon */}
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                    
-                Taibuda<Icon icon={mortarPestleSolid} className="navbar-icon"/>
-                    
-                </Link>
+                
+      <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+    <div>
+        Thaibuda<FontAwesomeIcon icon={faVihara} className="navbar-icon"/>
+        <div className="navbar-subtitle">พระพุทธมหาสุวรรณปฏิมากร</div>
+    </div>
+</Link>
                 {/* Logo */}
                 
                 {/* Menu Icon */}
@@ -61,7 +64,7 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+                MASAJES
               </Link>
             </li>
             <li className='nav-item'>
@@ -70,7 +73,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                CUENCOS TIBETANOS
               </Link>
             </li>
             <li className='nav-item'>
@@ -79,9 +82,19 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                MEDITACIÓN 
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link
+                to='/products'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                REIKI
+              </Link>
+            </li>
+            
 
             <li>
               <Link
@@ -89,11 +102,11 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                PEDIR CITA
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>PEDIR CITA</Button>}
         </div>
       </nav>
     </>

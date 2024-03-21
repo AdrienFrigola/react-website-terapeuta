@@ -1,7 +1,7 @@
 /* The :root selector matches the root element of a tree representing the document. In HTML, :root represents the <html> element and is identical to the selector html, except that its specificity is higher. */
 :root {
   /* The --primary is a CSS variable that is set to #fff which is white. */
-  --primary: #fff;
+  --primary: hsl(45.65, 82.14%, 67.06%);
 }
 
 /* The .btn class is for the button. */
@@ -23,7 +23,7 @@
   /* The background-color property sets the background color of an element. Here it is set to var(--primary) which is the value of the --primary variable. */
   background-color: var(--primary);
   /* The color property sets the color of the text. Here it is set to #242424 which is a dark gray. */
-  color: #242424;
+  color: hsl(359.05, 53.85%, 22.94%);
   /* The border property is a shorthand property for border-width, border-style, and border-color. Here it is set to 1px solid var(--primary) which means a 1px wide solid border with the color of the --primary variable. */
   border: 1px solid var(--primary);
 }
@@ -33,7 +33,7 @@
   /* The background-color property sets the background color of an element. Here it is set to transparent which means the background is transparent. */
   background-color: transparent;
   /* The color property sets the color of the text. Here it is set to #fff which is white. */
-  color: #fff;
+  color: hsl(45.65, 82.14%, 67.06%);
   padding: 8px 20px;
   border: 1px solid var(--primary);
   /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to all 0.3s ease-out. */
@@ -59,9 +59,9 @@
   /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to all 0.3s ease-out. */
   transition: all 0.3s ease-out;
   /* The background property sets the background effects of an element. Here it is set to #fff which is white. */
-  background: #fff;
+  background: hsl(45.65, 82.14%, 67.06%);
   /* The color property sets the color of the text. Here it is set to #242424 which is a dark gray. */
-  color: #242424;
+  color: hsl(359.05, 53.85%, 22.94%);
   /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to 250ms. */
   transition: 250ms;
 }

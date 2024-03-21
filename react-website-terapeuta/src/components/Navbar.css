@@ -2,7 +2,7 @@
 .navbar {
   
   /* The background property sets the background effects of an element. Here it is set to a linear gradient. */
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: linear-gradient(90deg, hsl(359.05, 53.85%, 22.94%) 0%, hsl(359.05, 53.85%, 22.94%) 100%);
   /* The height property sets the height of an element. */
   height: 80px;
   /* The display property specifies the display behavior of an element. Here flex is used which makes the element a block-level flex container. */
@@ -33,9 +33,14 @@
   max-width: 1500px;
 }
 
+.navbar-subtitle {
+  font-size: 0.5em; /* Adjust as needed */
+  color: hsl(45.65, 82.14%, 67.06%); /* Adjust as needed */
+}
+
 /* The .navbar-logo class is for the logo of the navigation bar. */
 .navbar-logo {
-  color: #fff;
+  color: hsl(45.65, 82.14%, 67.06%);
   /* The justify-self property sets the way an item is justified inside its alignment container along the inline or column axis. Here it is set to start. */
   justify-self: start;
   margin-left: 20px;
@@ -46,6 +51,7 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  
 }
 .navbar-icon {
   margin-left: 10px;
@@ -82,7 +88,7 @@
 
 /* The .nav-links class is for the links of the navigation menu. */
 .nav-links {
-  color: #fff;
+  color: hsl(45.65, 82.14%, 67.06%);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -93,14 +99,14 @@
 /* The :hover pseudo-class selects elements when you mouse over them. */
 .nav-links:hover {
   /* The border-bottom property is a shorthand property for border-bottom-width, border-bottom-style, and border-bottom-color. Here it is set to 4px solid #fff. */
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid hsl(45.65, 82.14%, 67.06%);
   /* The transition property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. Here it is set to all 0.2s ease-out. */
   transition: all 0.2s ease-out;
 }
 
 /* The .fa-bars class is for the bars icon in the navigation bar. */
 .fa-bars {
-  color: #fff;
+  color: hsl(45.65, 82.14%, 67.06%);
 }
 
 /* The .nav-links-mobile class is for the mobile version of the navigation links. */
@@ -133,15 +139,17 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    
   }
 
   /* The .nav-menu.active class is for the active state of the navigation menu. */
   .nav-menu.active {
-    background: #242222;
+    background: hsl(359.05, 53.85%, 22.94%);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    border-top: 3px solid hsl(45.65, 82.14%, 67.06%);
   }
 
   /* The .nav-links class is for the links of the navigation menu. */
@@ -154,14 +162,15 @@
 
   /* The :hover pseudo-class selects elements when you mouse over them. */
   .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
+    background-color: hsl(45.65, 82.14%, 67.06%);
+    color: hsl(359.05, 53.85%, 22.94%);
     border-radius: 0;
   }
 
   /* The .navbar-logo class is for the logo of the navigation bar. */
   .navbar-logo {
     position: absolute;
+    margin-top: -25px;
     top: 0;
     left: 0;
     /* The transform property applies a 2D or 3D transformation to an element. Here it is used to move the logo. */
@@ -177,11 +186,12 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: hsl(45.65, 82.14%, 67.06%);
   }
 
   /* The .fa-times class is for the times icon in the navigation bar. */
   .fa-times {
-    color: #fff;
+    color: hsl(45.65, 82.14%, 67.06%);
     font-size: 2rem;
   }
 
@@ -189,22 +199,22 @@
   .nav-links-mobile {
     display: block;
     text-align: center;
-    margin: 2rem auto;
+    margin: 6rem auto;
     border-radius: 4px;
     width: 80%;
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
-    color: #fff;
+    color: hsl(45.65, 82.14%, 67.06%);
     padding: 14px 20px;
-    border: 1px solid #fff;
+    border: 1px solid hsl(45.65, 82.14%, 67.06%);
     transition: all 0.3s ease-out;
   }
 
   /* The :hover pseudo-class selects elements when you mouse over them. */
   .nav-links-mobile:hover {
-    background: #fff;
-    color: #242424;
+    background: hsl(45.65, 82.14%, 67.06%);
+    color: hsl(359.05, 53.85%, 22.94%);
     transition: 250ms;
   }
 }

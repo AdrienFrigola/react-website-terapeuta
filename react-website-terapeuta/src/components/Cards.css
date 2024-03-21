@@ -3,7 +3,7 @@
   /* The padding property is a shorthand property for padding-top, padding-right, padding-bottom, and padding-left. Here it is set to 4rem. */
   padding: 4rem;
   /* The background property sets the background effects of an element. Here it is set to #fff which is white. */
-  background: #fff;
+  background: hsl(359.05, 53.85%, 22.94%);
 }
 
 /* The h1 selector selects all h1 elements. */
